@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+.home-container
+{
+    background-image: url('../assets/Home_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.major-title{
+    font-family: 'Courgette', cursive;
+    font-size: 55px;
+    color: rgb(209, 51, 3);
+}
+.button-container-home{
+    justify-content: flex-end;
+    font-style: italic;
+    align-items: center;
+}
+.motion-container{
+    width: 100%;
+    background-color: rgb(255, 255, 255,0.7);
+}

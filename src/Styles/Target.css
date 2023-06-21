@@ -1,0 +1,58 @@
+.form-container-target {
+  background-image: url('../assets/Intro\ wall.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-wrapper-target {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  animation: fadeIn 1s ease-in;
+
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.form-wrapper-target form {
+  display: flex;
+  flex-direction: column;
+}
+.form-wrapper-target .col-md-4,
+.form-wrapper-target .col-md-3 {
+  margin-bottom: 10px;
+}
+.form-wrapper-target .col-md-4 {
+  margin-bottom: 20px; 
+}
+@media (min-width: 768px) {
+  .form-wrapper-target {
+    max-width: 700px;
+  }
+
+  .form-wrapper-target form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-wrapper-target .col-md-4,
+  .form-wrapper-target .col-md-3 {
+    width: 48%;
+    margin-bottom: 10px;
+  }
+}
+
+

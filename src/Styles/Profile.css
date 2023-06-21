@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@1,5..1200,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital@1&display=swap');
+.profile-container {
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  animation: fadeIn 1s ease-in;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.profile-heading {
+  font-size: 3rem;
+  color: #ff6b6b;
+  font-family: 'Playfair', serif;
+}
+
+.profile-content {
+  margin-top: 5px;
+  animation: slideIn 1s ease-in;
+  border-radius: 5px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.profile-subheading {
+  font-size: 33px;
+  color: #6b6bff;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 7px;
+}
+
+.profile-text {
+  font-size: 30px;
+  color: rgb(0, 0, 63);
+  font-family: 'Noticia Text', serif;
+  margin-top: 5px;
+}
